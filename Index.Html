@@ -1,0 +1,23 @@
+<html>
+<head>
+    <title>Loading...</title>
+    <script>
+        function freezePage() {
+            let start = Date.now();
+            while (Date.now() - start < 60000) {} // Freezes the page for 1 minute (60000 ms)
+
+            // Show animation after freeze
+            document.body.innerHTML = `
+                <div style="text-align:center;">
+                    <h1 style="color:red;">😂 Happy April Fool! 😂</h1>
+                    <img src="https://media.giphy.com/media/3o7abKhOpu0NwenH3O/giphy.gif" width="300px">
+                </div>
+            `;
+        }
+        window.onload = freezePage;
+    </script>
+</head>
+<body>
+    <h1 style="text-align:center;">Loading...</h1>
+</body>
+</html>
